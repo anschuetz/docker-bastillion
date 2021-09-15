@@ -22,7 +22,7 @@ Docker-Bastillion runs as user 1001. Not as root. You must change ownership of t
 Run the docker image. The below example runs the image detached. Update the path to the keydb directory as required: 
 
 `
-sudo docker run -d -p 8080:8080 -p 8443:8443 -v /PATH/TO/keydb:/opt/bastillion/jetty/bastillion/WEB-INF/classes/keydb ecosi/bastillion
+sudo docker run -d -p 8080:8080 -p 8443:8443 -v /PATH/TO/keydb:/opt/bastillion/jetty/bastillion/WEB-INF/classes/keydb morzdocker/bastillion
 `
 
 From a web browser, navigate to `https://<Instance IP>:8080` and login with:
